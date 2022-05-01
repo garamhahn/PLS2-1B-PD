@@ -1,0 +1,65 @@
+# photodiode.db
+
+record(waveform, "1B:PD:RAW") {
+    field(DESC,"Photodiode raw data from PS9404-16")
+    field(EGU,"Volt")
+    field(NELM, 100000)
+    field(FTVL, 8) 
+}
+record(waveform, "1B:PD:BUNCH_LENGTH") {
+    field(DESC,"Bunch length array")
+    field(EGU,"ps")
+    field(NELM, 470)
+    field(FTVL, 8) 
+}
+record(waveform, "1B:PD:BUNCH_LENGTH_ERR") {
+    field(DESC,"Bunch length error array")
+    field(EGU,"ps")
+    field(NELM, 470)
+    field(FTVL, 8) 
+}
+record(waveform, "1B:PD:BUNCH_CURRENT") {
+    field(DESC,"Bunch current array")
+    field(EGU,"mA")
+    field(NELM, 470)
+    field(FTVL, 8) 
+}
+record(waveform, "1B:PD:BUNCH_CURRENT_ERR") {
+    field(DESC,"Bunch current error array")
+    field(EGU,"mA")
+    field(NELM, 470)
+    field(FTVL, 8) 
+}
+
+record(ao, "1B:PD:BUNCH_LENGTH_AVE") {
+  field(DESC,"Bunch length average ")
+  field(EGU,"ps")
+  #field(FTVL, 8)
+}
+
+record(ao, "1B:PD:BUNCH_LENGTH_MIN") {
+  field(DESC,"Bunch length minimum")
+  field(EGU,"ps")
+  #field(FTVL, 8)
+}
+
+record(ao, "1B:PD:BUNCH_LENGTH_MAX") {
+  field(DESC,"Bunch length maximum value")
+  field(EGU,"ps")
+  #field(FTVL, 8)
+}
+
+record(ao, "1B:PD:BUNCH_LENGTH_STD") {
+  field(DESC,"Bunch length standard deviation")
+  field(EGU,"ps")
+  #field(FTVL, 8)
+}
+
+record(ao, "1B:PD:BUNCH_AMP") {
+  field(DESC,"Total signal amplitude")
+  field(EGU, "mV")
+  #field(FTVL, 8)
+}
+
+
+# 8 - DOUBLE
